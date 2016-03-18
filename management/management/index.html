@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>INSPINIA | Dashboard v.3</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="fixed-navigation">
+<div id="wrapper">
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        <div class="sidebar-collapse">
+            <ul class="nav metismenu" id="side-menu">
+                <li class="nav-header">
+                    <div class="dropdown profile-element">
+                    	<span>
+                            <img alt="image" class="img-circle" src="img/profile_small.jpg" />
+                        </span>
+                        <span class="clear">
+                            <span class="block m-t-xs text-name">
+                                <strong class="font-bold">陈思</strong>
+                            </span>
+                            <span class="text-muted text-xs block">
+                                Lenovo
+                            </span>
+                        </span>
+                    </div>
+                    <div class="logo-element">
+                        <img src="img/icon_white.png" />
+                    </div>
+                </li>
+                <li class="active">
+                    <a href="index.html"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">实时分析</span></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-user"></i> <span class="nav-label">员工通讯录</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="contact.html">部门员工</a></li>
+                        <li><a href="contact_upload.html">导入导出<span class="label label-info pull-right">推荐</span></a></li>
+                        <li><a href="contact_config.html">通讯录格式配置</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">服务号</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="service.html">服务号管理</a></li>
+                        <li><a href="#">创建服务号</a></li>
+                        <li><a href="#">申请审批<span class="label label-primary pull-right">NEW</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-comments"></i> <span class="nav-label">话题</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="graph_flot.html">话题管理</a></li>
+                        <li><a href="graph_morris.html">分类设置</a></li>
+                        <li><a href="graph_rickshaw.html">默认背景</a></li>
+                        <li><a href="graph_chartjs.html">申请审批<span class="label label-primary pull-right">NEW</span></a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#"><i class="fa fa-gear"></i> <span class="nav-label">后台设置</span><span class="fa arrow"></span></a>
+                    <ul class="nav nav-second-level collapse">
+                        <li><a href="#">企业信息设置</a></li>
+                        <li><a href="#">配置子管理员</a></li>
+                        <li><a href="#">修改登录帐号</a></li>
+                        <li><a href="#">修改登录密码</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div id="page-wrapper" class="gray-bg">
+    	<div class="row border-bottom white-bg">
+        	<nav class="navbar navbar-static-top" role="navigation" style="margin-bottom: 0">
+        		<div class="navbar-header">
+           			<a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="index.html#"><i class="fa fa-bars"></i> </a>
+                    <div class="navbar-title-custom">实时分析</div>
+        		</div>
+            	<ul class="nav navbar-top-links navbar-right">
+                	<li>
+                    	<span class="m-r-sm text-muted welcome-message">Welcome to Cochat Management System.</span>
+                	</li>
+
+                	<li>
+                    	<a href="login.html">
+                        	<i class="fa fa-sign-out"></i> 退出
+                    	</a>
+                	</li>
+            	</ul>
+        	</nav>
+        </div>
+
+        <div class="row white-bg border-bottom dashboard-header border-top animated fadeInRight">
+        	<div class="col-lg-12">
+            
+    			<div>
+                	<span class="pull-right text-right">
+                    	<small>今日最高在线人数: 1550</small><br/>
+                        <small>历史最高在线人数: 8250</small>
+                    </span>
+                 	<h1 class="m-b-xs">实时在线人数: <span class="big-number">1280</span></h1>
+        		</div>
+
+				<div>
+					<canvas id="lineChart" height="50"></canvas>
+				</div>
+
+			</div>
+		</div> 
+                
+		<div class="wrapper wrapper-content animated fadeInRight">
+        	<div class="row">
+                    <div class="col-lg-4">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <span class="label label-primary pull-right">Daily</span>
+                                <h5>昨天活跃人数 (日活)</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <h1 class="no-margins">86,200</h1>
+                                <div class="stat-percent font-bold text-primary">98% <i class="fa fa-bolt"></i></div>
+                                <small>历史最高日活用户数： 23400</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <span class="label label-danger pull-right">Weekly</span>
+                                <h5>7天活跃人数 (周活)</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <h1 class="no-margins">275,800</h1>
+                                <div class="stat-percent font-bold text-danger">20% <i class="fa fa-level-down"></i></div>
+                                <small>历史最高周活用户数： 23400</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <span class="label label-primary pull-right">Monthly</span>
+                                <h5>30天活跃人数 (月活)</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <h1 class="no-margins">106,120</h1>
+                                <div class="stat-percent font-bold text-primary">44% <i class="fa fa-level-up"></i></div>
+                                <small>历史最高月活用户数： 23400</small>
+                            </div>
+                        </div>
+                    </div>
+			</div>
+            
+            <div class="row">
+                    <div class="col-lg-4">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>员工激活量</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <canvas id="installChart" width="240" height="240"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>应用访问量</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <table class="table table-hover no-margins">
+                                            <thead>
+                                            <tr>
+                                                <th>排行</th>
+                                                <th>模块</th>
+                                                <th>访问量</th>
+                                                <th>日动态</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td><span class="label label-primary">1</span></td>
+                                                <td>乐打卡</td>
+                                                <td>178200</td>
+                                                <td class="text-primary"> <i class="fa fa-level-up"></i> 24% </td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="label label-info">2</span></td>
+                                                <td>乐生活</td>
+                                                <td>162788</td>
+                                                <td class="text-primary"> <i class="fa fa-level-up"></i> 66% </td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="label label-success">3</span></td>
+                                                <td>文档库</td>
+                                                <td>28790</td>
+                                                <td class="text-primary"> <i class="fa fa-level-up"></i> 54% </td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="label label-warning">4</span></td>
+                                                <td>乐丰收</td>
+                                                <td>18768</td>
+                                                <td class="text-primary"> <i class="fa fa-level-up"></i> 12% </td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="label label-danger">5</span></td>
+                                                <td>任务</td>
+                                                <td>980</td>
+                                                <td class="text-danger"> <i class="fa fa-level-down"></i> 22% </td>
+                                            </tr>
+                                            <tr>
+                                                <td><span class="label label-danger">6</span></td>
+                                                <td>任务</td>
+                                                <td>24</td>
+                                                <td class="text-danger"> <i class="fa fa-level-down"></i> 66% </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="ibox float-e-margins">
+                            <div class="ibox-title">
+                                <h5>模块访问量</h5>
+                            </div>
+                            <div class="ibox-content">
+                                <canvas id="moduleChart" width="240" height="240"></canvas>
+                            </div>
+                        </div>
+                    </div>
+			</div>
+            
+        </div>
+            
+		<div class="footer">
+			<div class="pull-right">
+				10GB of <strong>250GB</strong> Free.
+			</div>
+			<div>
+				<strong>Copyright</strong> Example Company &copy; 2014-2015
+			</div>
+		</div>     
+	</div>
+</div>
+
+    <!-- Mainly scripts -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+
+    <!-- Custom and plugin javascript -->
+    <script src="js/inspinia.js"></script>
+    <script src="js/plugins/pace/pace.min.js"></script>
+
+    <!-- jQuery UI -->
+    <script src="js/plugins/jquery-ui/jquery-ui.min.js"></script>
+
+    <!-- ChartJS-->
+    <script src="js/plugins/chartJs/Chart.min.js"></script>
+
+    <script>
+		// linechart doughnut
+        $(function(){
+			
+            var lineData = {
+                labels: ["09:00", "09:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "13:00", "13:30", "14:00", "14:30", "15:00", "15:30", "16:00", "16:30", "17:00", "17:30", "18:00", "18:30"],
+                datasets: [
+                    {
+                        label: "今天",
+                        fillColor: "rgba(37,182,237,0.5)",
+                        strokeColor: "rgba(37,182,237,0.7)",
+                        pointColor: "rgba(37,182,237,1)",
+                        pointStrokeColor: "#fff",
+                        pointHighlightFill: "#fff",
+                        pointHighlightStroke: "rgba(37,182,237,1)",
+                        data: [28, 48, 40, 19, 86, 27, 90, 20, 21, 20, 28, 48, 40, 19, 86, 27, 90, 20, 21, 20]
+                    }
+                ]
+            };
+
+            var lineOptions = {
+                scaleShowGridLines: true,
+                scaleGridLineColor: "rgba(0,0,0,.05)",
+                scaleGridLineWidth: 1,
+                bezierCurve: true,
+                bezierCurveTension: 0.4,
+                pointDot: true,
+                pointDotRadius: 4,
+                pointDotStrokeWidth: 1,
+                pointHitDetectionRadius: 20,
+                datasetStroke: true,
+                datasetStrokeWidth: 2,
+                datasetFill: true,
+                responsive: true,
+				tooltipTemplate: "<%if (label){%><%=label%> <%}%>在线<%= value %>人",
+            };
+
+
+            var ctx = document.getElementById("lineChart").getContext("2d");
+            var myNewChart = new Chart(ctx).Line(lineData, lineOptions);
+			
+			
+			//install pie chart
+			var installChartData = [
+	
+				{
+					value: 1456,
+					color: '#25b6ed',
+					highlight: '#6dd3fa',
+					label: "已激活"
+				},
+	
+				{
+					value: 354,
+					color: '#dddddd',
+					highlight:'#f5f5f5',
+					label: "未激活"
+				},
+	
+			];
+
+			var install = document.getElementById("installChart").getContext("2d");
+			var installChart = new Chart(install).Doughnut(installChartData, { tooltipTemplate : "<%if (label){%><%=label%>: <%}%><%= value %>人"});
+			
+			var installChartHolder = document.createElement('div');
+			installChartHolder.innerHTML = installChart.generateLegend();
+			// Include a html legend template after the module doughnut itself
+			var installChartHelpers = Chart.helpers;
+			installChartHelpers.each(installChartHolder.firstChild.childNodes, function(legendNode, index){
+				installChartHelpers.addEvent(legendNode, 'mouseover', function(){
+					var activeSegment = installChart.segments[index];
+					activeSegment.save();
+					activeSegment.fillColor = activeSegment.highlightColor;
+					installChart.showTooltip([activeSegment]);
+					activeSegment.restore();
+				});
+			});
+			installChartHelpers.addEvent(installChartHolder.firstChild, 'mouseout', function(){
+				installChart.draw();
+			});
+			document.getElementById("installChart").parentNode.appendChild(installChartHolder.firstChild);
+			
+			//module pie chart
+			var moduleChartData = [
+	
+				{
+					value: 4536,
+					color: '#25b6ed',
+					highlight: '#6dd3fa',
+					label: "应用"
+				},
+	
+				{
+					value: 4554,
+					color: '#0099cc',
+					highlight:'#1abef5',
+					label: "圈子"
+				},
+				{
+					value: 6554,
+					color: '#1caf9a',
+					highlight:'#58eed9',
+					label: "通讯录"
+				}
+	
+			];
+
+			var module = document.getElementById("moduleChart").getContext("2d");
+			var moduleChart = new Chart(module).Doughnut(moduleChartData, { tooltipTemplate : "<%if (label){%><%=label%>: <%}%><%= value %>次"});
+			
+			var moduleChartHolder = document.createElement('div');
+			moduleChartHolder.innerHTML = moduleChart.generateLegend();
+			// Include a html legend template after the module doughnut itself
+			var moduleChartHelpers = Chart.helpers;
+			moduleChartHelpers.each(moduleChartHolder.firstChild.childNodes, function(legendNode, index){
+				moduleChartHelpers.addEvent(legendNode, 'mouseover', function(){
+					var activeSegment = moduleChart.segments[index];
+					activeSegment.save();
+					activeSegment.fillColor = activeSegment.highlightColor;
+					moduleChart.showTooltip([activeSegment]);
+					activeSegment.restore();
+				});
+			});
+			moduleChartHelpers.addEvent(moduleChartHolder.firstChild, 'mouseout', function(){
+				moduleChart.draw();
+			});
+			document.getElementById("moduleChart").parentNode.appendChild(moduleChartHolder.firstChild);
+	
+		});
+		
+    </script>
+</body>
+</html>

@@ -1,0 +1,1557 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />	
+    <title>公司注册</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/animate.css" rel="stylesheet"/>
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/swiper.min.css" rel="stylesheet" />
+
+	<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+	<div class="loading-page" id="loading-page">
+		<img src="img/loading.gif" class="loading"/>
+	</div>
+
+    <div class="top-background" id="top-background">
+      <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="background-image: url(img/background3.jpg)"></div>
+                <div class="swiper-slide" style="background-image: url(img/background2.jpg)"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="head-container" id="head-container">
+    	<div class="wap">
+            <img src="img/icon_blue.png" />
+            <div class="tab" id="tab-main">首页</div>
+            <div class="tab" id="tab-function">功能</div>
+            <div class="tab" id="tab-download">下载</div>
+        </div>
+    </div>
+    
+    <div class="phone-container hidden-xs" id="phone-container">
+        <div class="wap">
+        	<img id="phone-head" src="img/phone-head.png" />
+            <div class="swiper-container" id="phone-swiper">
+                <div class="swiper-wrapper"></div>
+            </div>
+            <div class="swiper-pagination" id="phone-swiper-pagination"></div>
+        </div>
+    </div>
+    
+    <div class="phone-back-container hidden-xs" id="phone-back-container">
+    	<img id="phone-back" src="img/phone-back.png" />
+    </div>
+
+    <div class="main-container" id="main-container">
+        <div class="wap">
+        	<img src="img/title.png" id="main-title" />
+            <div class="left-wap">
+                <div class="epsign" id="epsign">
+                    <a class="btn btn-primary" href="#sign" id="epsign-button" role="button">企业注册</a>
+                    <a class="btn btn-primary" href="#" id="complain-button" role="button">企业申诉</a>
+				</div>
+				<div class="ssign" id="ssign">
+                    <a class="btn btn-primary" href="#" id="ssign-button" role="button">个人注册</a>
+                </div>
+                <div class="download" id="download">
+                    <a class="btn btn-primary" href="#" id="download-button" role="button">下载乐聊</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="logo-container" id="logo-container">
+		<div class="wap">
+        	<div class="title">工作沟通 办公协同</div>
+            <div class="line"></div>
+            <div class="subtitle">一种全新的工作方式 移动办公门户</div>
+        	<div class="logo-bg hidden-xs">
+            	<img src="img/logo.png" class="wow rotateIn" data-wow-delay="0.3s" />
+            </div>
+            <div class="link1 wow fadeIn hidden-xs" data-wow-delay="0.6s"></div>
+            <div class="link2 wow fadeIn hidden-xs" data-wow-delay="0.6s"></div>
+            <div class="link3 hidden-xs"></div>
+            <div class="link4 wow fadeIn" data-wow-delay="0.6s"></div>
+            <div class="link5 wow fadeIn" data-wow-delay="0.6s"></div>
+            <div class="link6 wow fadeIn" data-wow-delay="0.6s"></div>
+            <div class="link7 wow fadeIn" data-wow-delay="0.6s"></div>
+            <div class="text1 wow fadeInRight" data-wow-delay="0.6s">便捷、扁平化的沟通工具<img src="img/biaoqian_left.png" /></div>
+            <div class="text2 wow fadeInRight" data-wow-delay="0.6s">公司信息发布反馈收集渠道<img src="img/biaoqian_left.png" /></div>
+            <div class="text3 wow fadeInLeft" data-wow-delay="0.6s">员工个人展现平台<img src="img/biaoqian_right.png" /></div>
+            <div class="text4 wow fadeInLeft" data-wow-delay="0.6s">数据安全的私有平台<img src="img/biaoqian_right.png" /></div>
+        </div>
+    </div>
+    
+    <div class="number-info-container" id="number-info-container">
+    	<div class="wap">
+        	<div class="swiper-container swiper-no-swiping">
+        		<div class="swiper-wrapper">
+            		<div class="swiper-slide">
+                    	<div class="row">
+                            <div class="col-xs-3">
+                                <div class="item wow fadeInUp">
+                                    <div class="circel-bg"><i class="fa fa-users fa-5x"></i></div>
+                                    <div class="title">月活量</div>
+                                    <div class="timer" id="earth" data-to="1378" data-speed="7000">1378</div>
+                                </div>
+                            </div>
+                            <div class="col-xs-3">
+                                <div class="item wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="circel-bg"><i class="fa fa-cloud-download fa-5x"></i></div>
+                                    <div class="title">下载量</div>
+                                    <div class="timer" data-to="8378" data-speed="7000">8378</div>
+                                </div>                
+                            </div>
+                            <div class="col-xs-3">
+                                <div class="item wow fadeInUp" data-wow-delay="0.6s">
+                                    <div class="circel-bg"><i class="fa fa-user fa-5x"></i></div>
+                                    <div class="title">注册量</div>
+                                    <div class="timer" data-to="6790" data-speed="7000">6790</div>
+                                </div>  
+                            </div>
+                            <div class="col-xs-3">
+                                <div class="item wow fadeInUp" data-wow-delay="0.9s">
+                                    <div class="circel-bg"><i class="fa fa-share fa-5x"></i></div>
+                                    <div class="title">分享量</div>
+                                    <div class="timer" data-to="14290" data-speed="7000">14290</div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+            		<div class="swiper-slide">
+                    	<div class="row">
+                            <div class="col-xs-3">
+                                <div class="item">
+                                    <div class="circel-bg"><i class="fa fa-users fa-5x"></i></div>
+                                    <div class="title">月活量</div>
+                                    <div class="timer" id="earth" data-to="1378" data-speed="7000">1378</div>
+                                </div>
+                            </div>
+                            <div class="col-xs-3">
+                                <div class="item">
+                                    <div class="circel-bg"><i class="fa fa-cloud-download fa-5x"></i></div>
+                                    <div class="title">下载量</div>
+                                    <div class="timer" data-to="8378" data-speed="7000">8378</div>
+                                </div>                
+                            </div>
+                            <div class="col-xs-3">
+                                <div class="item">
+                                    <div class="circel-bg"><i class="fa fa-user fa-5x"></i></div>
+                                    <div class="title">注册量</div>
+                                    <div class="timer" data-to="6790" data-speed="7000">6790</div>
+                                </div>  
+                            </div>
+                            <div class="col-xs-3">
+                                <div class="item">
+                                    <div class="circel-bg"><i class="fa fa-share fa-5x"></i></div>
+                                    <div class="title">分享量</div>
+                                    <div class="timer" data-to="14290" data-speed="7000">14290</div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+        		</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="function-container" id="function-container">
+    	<div class="wap">
+           	<div class="title">三大功能亮点</div>
+            <div class="line"></div>
+            <!-- Add Pagination -->
+        	<div class="swiper-pagination"></div>
+        	<div class="row">
+  				<div class="col-sm-4 hidden-xs"><div class="bg wow fadeInLeft" id="function-bg-left" data-wow-delay="0.3s" style="background-position:right;"></div></div>
+  				<div class="col-sm-4">
+                	<div class="bg wow fadeInUp" data-wow-delay="0.6s">
+                    	<!-- Swiper -->
+    					<div class="swiper-container swiper-no-swiping">
+        					<div class="swiper-wrapper">
+            					<div class="swiper-slide" style="background-image: url(img/portfolio-1.jpg);"></div>
+            					<div class="swiper-slide" style="background-image: url(img/portfolio-2.jpg);"></div>
+            					<div class="swiper-slide" style="background-image: url(img/portfolio-3.jpg);"></div>
+        					</div>
+                    	</div>
+                  </div>
+              </div>
+  				<div class="col-sm-4 hidden-xs"><div class="bg wow fadeInRight" id="function-bg-right" data-wow-delay="0.3s" style="background-position:left;"></div></div>
+			</div>
+        </div>
+        <img style="display:none;" src="img/function_bg_left1.png" />
+        <img style="display:none;" src="img/function_bg_right1.png" />
+        <img style="display:none;" src="img/function_bg_left2.png" />
+        <img style="display:none;" src="img/function_bg_right2.png" />
+        <img style="display:none;" src="img/function_bg_left3.png" />
+        <img style="display:none;" src="img/function_bg_right3.png" />
+    </div>
+    
+    <div class="security-container" id="security-container">
+    	<div class="wap">
+        	<div class="title">安全保障</div>
+            <div class="line"></div>
+            <div class="subtitle">四重保障 保护信息私有安全</div>
+            <div class="row">
+  				<div class="col-sm-3 wow fadeInUp" data-wow-delay="0.3s">
+                	<div class="item">
+                		<img class="bg" src="img/security_1.jpg"/>
+                    	<div class="mask">
+                        	<div class="title">数据加密</div>
+                            <div class="subtitle">客户端、服务端<br>数据加密存储</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 wow fadeInUp" data-wow-delay="0.3s">
+                	<div class="item">
+                		<img class="bg" src="img/security_2.jpg"/>
+                    	<div class="mask">
+                        	<div class="title">锁屏密码</div>
+                            <div class="subtitle">铭感数据双重验证<br>AD验证和手势密码</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 wow fadeInUp" data-wow-delay="0.3s">
+                	<div class="item">
+                		<img class="bg" src="img/security_3.jpg"/>
+                    	<div class="mask">
+                        	<div class="title">通信安全</div>
+                            <div class="subtitle">多端信息内容<br>全程加密传输保障信息安全</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3 wow fadeInUp" data-wow-delay="0.3s">
+                	<div class="item">
+                		<img class="bg" src="img/security_4.jpg"/>
+                    	<div class="mask">
+                        	<div class="title">混合云</div>
+                            <div class="subtitle">敏感数据本地存储</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    	</div>
+    </div>
+    
+    <div class="setup-container" id="setup-container">
+    	<div class="wap">
+        	<div class="title">部署方式</div>
+            <div class="line"></div>
+            <div class="swiper-pagination"></div>
+            <!-- Swiper -->
+    		<div class="swiper-container wow fadeInUp" data-wow-delay="0.3s">
+        		<div class="swiper-wrapper">
+            		<div class="swiper-slide">
+                    	<div class="row">
+                            <div class="col-xs-4">
+                                <div class="item">
+                                    <div class="circel-bg"><i class="fa fa-cloud fa-5x"></i></div>
+                                    <div class="title">乐聊云端服务</div>
+                                </div>
+                          </div>
+                            <div class="col-xs-4">
+                                <div class="item">
+                                    <div class="circel-bg"><img src="img/icon_white.png" /></div>
+                                    <div class="title">乐聊</div>
+                                </div>
+                          </div>
+                            <div class="col-xs-4">
+                                <div class="item">
+                                    <div class="circel-bg"><i class="fa fa-server fa-5x"></i></div>
+                                    <div class="title">公司私有服务</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="link"></div>
+                        <div class="note-left">基础功能<br/>公共应用</div>
+                        <div class="note-right">高安全性<br/>私有应用</div>
+                    </div>
+            		<div class="swiper-slide">
+                    	<div class="row">
+                            <div class="col-xs-6">
+                                <div class="item">
+                                    <div class="circel-bg"><img src="img/icon_white.png" /></div>
+                                    <div class="title">乐聊</div>
+                                </div>
+                          </div>
+                            <div class="col-xs-6">
+                                <div class="item">
+                                    <div class="circel-bg"><i class="fa fa-server fa-5x"></i></div>
+                                    <div class="title">公司私有服务</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="link2"></div>
+                        <div class="note-center">定制服务 实施服务<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;支持服务</div>
+                    </div>
+        		</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="footer" id="footer">
+    	<div class="wap">
+        	<div class="link">联想官网 | 联想手机官网 | 摩托罗拉官网 | 乐聊宣传官网 | 联想笔记本官网 | 联想内网</div>
+            <div class="company">ECS 乐聊 © 2015 京 B2-20140234-12</div>
+            <div class="item-container">
+            	<div class="item"><div class="circel-bg"><i class="fa fa-weibo fa-5x"></i></div></div>
+                <div class="item"><div class="circel-bg"><i class="fa fa-weixin fa-5x"></i></div></div>
+                <div class="item"><div class="circel-bg"><i class="fa fa-twitter fa-5x"></i></div></div>
+                <div class="item"><div class="circel-bg"><i class="fa fa-qq fa-5x"></i></div></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="scrollToTop-container" id="scrollToTop-container">
+    	<a href="#main-container">
+        	<div class="scrollToTop"><i class="fa fa-angle-up fa-4x"></i></div>
+        </a>
+    </div>
+    
+    <div class="function-list-container" id="function-list-container">
+    	<img class="down-arrows wow pulse" id="down-arrows" src="img/down-arrows.png" />
+		<div class="swiper-container" id="phone-swiper">
+   	    	<div class="swiper-pagination"></div>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                	<div class="wap">
+                    	<div class="big-title">公司通讯录</div>
+                    	<div class="item-container">
+                    		<div class="circel-bg">1</div>
+                        	<div class="info">
+                        		<div class="title">只有同事，仅聊工作</div>
+                            	<div class="content">基于AD的实名体系</div>
+                            	<div class="content">基于HR的组织架构</div>
+                        	</div>
+                        </div>
+                        <div class="item-container">
+                    		<div class="circel-bg">2</div>
+                        	<div class="info">
+                        		<div class="title">一秒找人，快速定位</div>
+                            	<div class="content">输入账号即可实时搜索</div>
+                            	<div class="content">查看详情，汇报关系，工位地址</div>
+                        	</div>
+                        </div>
+                        <div class="item-container">
+                    		<div class="circel-bg">3</div>
+                        	<div class="info">
+                        		<div class="title">直接对话，高效沟通</div>
+                            	<div class="content">发起消息、接收提醒</div>
+                            	<div class="content">添加关注，方便交流</div>
+                                <div class="content">一键电话、短信、邮件</div>
+                        	</div>
+                        </div>
+                    </div>
+              	</div>   
+                <div class="swiper-slide">
+                	<div class="wap">
+                    	<div class="big-title">乐友圈/话题</div>
+                    	<div class="item-container">
+                    		<div class="circel-bg">1</div>
+                        	<div class="info">
+                        		<div class="title">企业社交，分享学习</div>
+                            	<div class="content">乐友圈中可以与同事分享所见所得</div>
+                            	<div class="content">帮助分开私人圈子与工作圈子</div>
+                        	</div>
+                        </div>
+                        <div class="item-container">
+                    		<div class="circel-bg">2</div>
+                        	<div class="info">
+                        		<div class="title">话题圈子，畅所欲言</div>
+                            	<div class="content">开启工作、学习、生活、娱乐等有关话题</div>
+                            	<div class="content">收集员工意见，提供一个开放透明的平台</div>
+                        	</div>
+                        </div>
+                        <div class="item-container">
+                    		<div class="circel-bg">3</div>
+                        	<div class="info">
+                        		<div class="title">热门活动，活跃气氛</div>
+                            	<div class="content">无论是公司中大小活动，年会生日会，甚至团购</div>
+                            	<div class="content">二手市场都可在话题中开放一个线上交流平台</div>
+                        	</div>
+                        </div>
+                    </div>
+             	</div>
+                <div class="swiper-slide">
+                	<div class="wap">
+                    	<div class="big-title">沟通媒体</div>
+                    	<div class="item-container">
+                    		<div class="circel-bg">1</div>
+                        	<div class="info">
+                        		<div class="title">单聊群聊</div>
+                        	</div>
+                        </div>
+                        <div class="item-container">
+                    		<div class="circel-bg">2</div>
+                        	<div class="info">
+                        		<div class="title">缺省/自建群</div>
+                        	</div>
+                        </div>
+                        <div class="item-container">
+                    		<div class="circel-bg">3</div>
+                        	<div class="info">
+                        		<div class="title">内网新闻</div>
+                        	</div>
+                        </div>
+                    </div>
+              	</div> 
+                <div class="swiper-slide">
+                	<div class="wap">
+                    	<div class="big-title">文档库</div>
+                    	<div class="item-container">
+                    		<div class="circel-bg">1</div>
+                        	<div class="info">
+                        		<div class="title">一键扫描，实时同步</div>
+                            	<div class="content">乐聊扫一扫，迅速同步PC端文档库</div>
+                            	<div class="content">手机端、电脑端实时同步，方便移动办公</div>
+                        	</div>
+                        </div>
+                        <div class="item-container">
+                    		<div class="circel-bg">2</div>
+                        	<div class="info">
+                        		<div class="title">上传下载，便捷分享</div>
+                            	<div class="content">文件上传，下载，手机查看</div>
+                            	<div class="content">资料共享，支持发送到聊天</div>
+                        	</div>
+                        </div>
+                        <div class="item-container">
+                    		<div class="circel-bg">3</div>
+                        	<div class="info">
+                        		<div class="title">手势密码，安全无忧</div>
+                            	<div class="content">双重身份验证，外人无权查看</div>
+                            	<div class="content">多级权限，行为可控</div>
+                        	</div>
+                        </div>
+                    </div>
+              	</div>
+                <div class="swiper-slide">
+                	<div class="wap">
+                    	<div class="big-title">任务管理</div>
+                    	<div class="item-container">
+                    		<div class="circel-bg">1</div>
+                        	<div class="info">
+                        		<div class="title">分配到人，项目模式</div>
+                            	<div class="content">创建Task后可assign到个人，同时对方收到任务提醒</div>
+                            	<div class="content">方便项目管理、team协同办公</div>
+                        	</div>
+                        </div>
+                        <div class="item-container">
+                    		<div class="circel-bg">2</div>
+                        	<div class="info">
+                        		<div class="title">高效追踪，最新进展</div>
+                            	<div class="content">多种模式查看任务状态</div>
+                            	<div class="content">快速了解任务进展</div>
+                        	</div>
+                        </div>
+                        <div class="item-container">
+                    		<div class="circel-bg">3</div>
+                        	<div class="info">
+                        		<div class="title">任务讨论，提升效率</div>
+                            	<div class="content">针对任务直接发起讨论</div>
+                            	<div class="content">第一时间迅速解决问题</div>
+                        	</div>
+                        </div>
+                    </div>
+              	</div>
+                <div class="swiper-slide">
+                	<div class="wap">
+                    	<div class="big-title">日程管理</div>
+                    	<div class="item-container">
+                    		<div class="circel-bg">1</div>
+                        	<div class="info">
+                        		<div class="title">会议标记，不怕忘事</div>
+                            	<div class="content">同步outlook会议</div>
+                        	</div>
+                        </div>
+                        <div class="item-container">
+                    		<div class="circel-bg">2</div>
+                        	<div class="info">
+                        		<div class="title">多种视角，方便查阅</div>
+                            	<div class="content">按天、月查看日历</div>
+                        	</div>
+                        </div>
+                        <div class="item-container">
+                    		<div class="circel-bg">3</div>
+                        	<div class="info">
+                        		<div class="title">关联任务，总览事务</div>
+                            	<div class="content">分配任务添加至日历</div>
+                        	</div>
+                        </div>
+                    </div>
+              	</div>
+                <div class="swiper-slide">
+                	<div class="wap">
+                    	<div class="big-title">考勤/请假</div>
+                    	<div class="item-container">
+                    		<div class="circel-bg">1</div>
+                        	<div class="info">
+                        		<div class="title">签到</div>
+                            	<div class="content">电子考勤，异地同步</div>
+                        	</div>
+                        </div>
+                        <div class="item-container">
+                    		<div class="circel-bg">2</div>
+                        	<div class="info">
+                        		<div class="title">请假</div>
+                            	<div class="content">丰富模板，快速提交</div>
+                        	</div>
+                        </div>
+                        <div class="item-container">
+                    		<div class="circel-bg">3</div>
+                        	<div class="info">
+                        		<div class="title">审批</div>
+                            	<div class="content">随时审批，进度清晰</div>
+                        	</div>
+                        </div>
+                    </div>
+              	</div>
+                <div class="swiper-slide">
+                	<div class="wap">
+                    	<div class="big-title">电子投票</div>
+                    	<div class="item-container">
+                    		<div class="circel-bg">1</div>
+                        	<div class="info">
+                        		<div class="title">风格简约，快速创建</div>
+                            	<div class="content">支持单选，多选题型</div>
+                                <div class="content">“轻调查”，几秒搞定</div>
+                        	</div>
+                        </div>
+                        <div class="item-container">
+                    		<div class="circel-bg">2</div>
+                        	<div class="info">
+                        		<div class="title">投票结果，清晰明了</div>
+                            	<div class="content">饼状结果图，简单直接</div>
+                                <div class="content">投票之后，立即查看当前结果</div>
+                        	</div>
+                        </div>
+                        <div class="item-container">
+                    		<div class="circel-bg">3</div>
+                        	<div class="info">
+                        		<div class="title">乐聊微信，任意转发</div>
+                            	<div class="content">创建的调查，可直接转发至微信</div>
+                                <div class="content">也可转发给联系人或群组</div>
+                        	</div>
+                        </div>
+                    </div>
+              	</div> 
+                <div class="swiper-slide">
+                	<div class="wap">
+                    	<div class="big-title">员工服务</div>
+                    	<div class="item-container">
+                    		<div class="circel-bg">1</div>
+                        	<div class="info">
+                        		<div class="title">内部举荐</div>
+                        	</div>
+                        </div>
+                        <div class="item-container">
+                    		<div class="circel-bg">2</div>
+                        	<div class="info">
+                        		<div class="title">员工分布</div>
+                        	</div>
+                        </div>
+                        <div class="item-container">
+                    		<div class="circel-bg">3</div>
+                        	<div class="info">
+                        		<div class="title">HR服务</div>
+                        	</div>
+                        </div>
+                    </div>
+             	</div>
+                 <div class="swiper-slide">
+                	<div class="wap">
+                    	<div class="big-title">开放平台</div>
+                    	<div class="item-container">
+                    		<div class="circel-bg">1</div>
+                        	<div class="info">
+                        		<div class="title">个性化</div>
+                            	<div class="content">个性化应用接入，定制公司专属应用</div>
+                        	</div>
+                        </div>
+                        <div class="item-container">
+                    		<div class="circel-bg">2</div>
+                        	<div class="info">
+                        		<div class="title">开放服务</div>
+                            	<div class="content">开放标准API，随时调用</div>
+                        	</div>
+                        </div>
+                        <div class="item-container">
+                    		<div class="circel-bg">3</div>
+                        	<div class="info">
+                        		<div class="title">多样化</div>
+                            	<div class="content">公共应用，第三方应用，不断扩展</div>
+                        	</div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+         </div>
+    </div>
+    
+    <div class="download-container" id="download-container">
+		<div class="wap">
+        	<div class="row">
+  				<div class="col-sm-4">
+                	<div class="container">
+                    	<img src="img/pc.png" />
+                    	<div class="title">PC 版本</div>
+                        <div class="note">多端同步便捷<br>beta版本测试中</div>
+                        <div class="download"><i class="fa fa-download"></i></div>
+                    </div>
+                </div>
+  				<div class="col-sm-4">
+                	<div class="container">
+                    	<img src="img/android.png" />
+                    	<div class="title">Android 版本</div>
+                        <div class="note">下载安装包到电脑<br>或从安卓市场搜索“乐聊”</div>
+                        <div class="download"><i class="fa fa-download"></i></div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                	<div class="container">
+                    	<img src="img/apple.png" />
+                    	<div class="title">IOS 版本</div>
+                        <div class="note">到app store下载乐聊<br>或在IOS手机端搜索乐聊</div>
+                        <div class="download"><i class="fa fa-download"></i></div>
+                    </div>
+                </div>
+			</div>
+        </div>
+    </div>
+    
+    <div class="register-container" id="register-container">
+    	<div class="wap-up">
+        	<div class="number-wap">
+        		<div class="number" id="register-number-1">1</div>
+                <div class="title" id="register-title-1">填写注册号</div>
+            </div>
+            <div class="number-wap">
+        		<div class="number" id="register-number-2">2</div>
+                <div class="title" id="register-title-2">完善资料</div>
+            </div>
+            <div class="number-wap">
+        		<div class="number" id="register-number-3">3</div>
+                <div class="title" id="register-title-3">注册完成</div>
+            </div>
+        </div>
+        <div class="wap-down">
+        	<div class="register" id="register-1">
+            	<form class="form-horizontal">
+  					<div class="form-group">
+    					<label id="labelInputPhone" for="inputPhone" class="col-sm-3 control-label hidden-xs">注册方式 <span class="symbol">*</span></label>
+    					<div class="col-sm-2" id="wap-peselect">
+                        	<select id="selectMobile-email" class="form-control">
+ 					 			<option value="mobile">手机号</option>
+  								<option value="email">邮箱</option>
+							</select>
+                        </div>
+                        <div class="col-sm-7">
+                        	<div class="input-group">
+      							<div class="input-group-addon" id="register-1-zone">+86</div>
+                        		<input type="text" class="form-control" id="inputPhone" placeholder="请输入手机号">
+                            </div>
+                            <div class="input-error-msg">手机号错误</div>
+                        </div>
+  					</div>
+  					<div class="form-group">
+    					<label id="labelInputCode" for="inputCode" class="col-xs-3 control-label hidden-xs">短信验证码 <span class="symbol">*</span></label>
+    					<div class="col-xs-6">
+                            <input type="password" class="form-control" id="inputCode" placeholder="短信验证码">
+                        </div>
+                        <div class="col-xs-3" id="wap-inputCodeButton"><button type="button" class="btn btn-primary button-code">获取验证码</button></div>
+  					</div>
+ 					<div class="form-group">
+    					<div class="col-sm-offset-3 col-sm-9">
+      						<div class="checkbox">
+       	 						<label><input id="checkboxRule" type="checkbox">我已经阅读了条款</label>
+      						</div>
+    					</div>
+  					</div>
+ 					<div class="form-group">
+    					<div class="col-sm-offset-3 col-sm-9">
+      						<button type="button" id="register-1-submit" class="btn btn-primary button-submit">下一步</button>
+    					</div>
+  					</div>
+				</form>
+            </div>
+            <div class="register" id="register-2">
+            	<form class="form-horizontal">
+  					<div class="form-group">
+    					<label for="inputPassword" class="col-sm-3 control-label hidden-xs">密码 <span class="symbol">*</span></label>
+                        <div class="col-sm-9">
+                        	<input type="password" class="form-control" id="inputPassword" placeholder="请输入密码">
+                        </div>
+  					</div>
+  					<div class="form-group">
+    					<label for="inputRePassword" class="col-sm-3 control-label hidden-xs">确认密码 <span class="symbol">*</span></label>
+    					<div class="col-sm-9">
+                        	<input type="password" class="form-control" id="inputRePassword" placeholder="请再次确认密码">
+                        </div>
+  					</div>
+                    <div class="form-group">
+    					<label class="col-sm-3 control-label hidden-xs"></label>
+    					<div class="col-sm-9">
+                        	<div class="enterprise-msg">您还未加入企业，请选择加入 或 <a href="#" id="button-pe-create" class="button-pe-create">创建企业</a></div>
+                        </div>
+  					</div>
+                    <div class="form-group">
+    					<label for="selectEnterprise" class="col-sm-3 control-label hidden-xs">加入企业 <span class="symbol">*</span></label>
+                        <div class="col-sm-9">
+                        	<select id="selectEnterprise" class="form-control">
+                            	<option value="">请选择企业</option>
+ 					 			<option value="lenovo">联想</option>
+  								<option value="huawei">华为</option>
+                                <option value="xiaomi">小米</option>
+                                <option value="apple">苹果</option>
+							</select>
+                        </div>
+  					</div>
+ 					<div class="form-group">
+    					<div class="col-sm-offset-3 col-sm-9">
+      						<button type="button" id="register-2-submit" class="btn btn-primary button-submit">下一步</button>
+    					</div>
+  					</div>
+				</form>
+            </div>
+            <div class="register" id="register-2e">
+            	<form class="form-horizontal">
+                	<div class="form-group">
+    					<label for="inputEnterpriseName" class="col-sm-3 control-label hidden-xs">企业(团队)名称 <span class="symbol">*</span></label>
+                        <div class="col-sm-9">
+                        	<input type="text" class="form-control" id="inputEnterpriseName" placeholder="请输入企业(团队)名称">
+                        </div>
+  					</div>
+  					<div class="form-group">
+    					<label for="inputEnterpriseLocation" class="col-sm-3 control-label hidden-xs">所在地</label>
+                        <div class="col-sm-9">
+                        	<input type="text" class="form-control" id="inputEnterpriseLocation" placeholder="所在地(选填)">
+                        </div>
+  					</div>
+                    <div class="form-group">
+    					<label for="inputEnterpriseType" class="col-sm-3 control-label hidden-xs">行业类型</label>
+                        <div class="col-sm-9">
+                        	<select id="inputEnterpriseType" class="form-control">
+                            	<option value="">选择行业类型(选填)</option>
+ 					 			<option value="1">产品</option>
+  								<option value="2">IT</option>
+                                <option value="3">政府</option>
+                                <option value="4">教育</option>
+							</select>
+                        </div>
+  					</div>
+                    <div class="form-group">
+    					<label class="col-sm-3 control-label hidden-xs"></label>
+                        <div class="col-sm-9">
+                        	以下是管理员信息
+                        </div>
+  					</div>
+                    <div class="form-group">
+    					<label for="inputPasswordEp" class="col-sm-3 control-label hidden-xs">管理密码 <span class="symbol">*</span></label>
+    					<div class="col-sm-9">
+                        	<input type="password" class="form-control" id="inputPasswordEp" placeholder="请输入密码">
+                        </div>
+  					</div>
+  					<div class="form-group">
+    					<label for="inputRePasswordEp" class="col-sm-3 control-label hidden-xs">确认密码 <span class="symbol">*</span></label>
+    					<div class="col-sm-9">
+                        	<input type="password" class="form-control" id="inputRePasswordEp" placeholder="请再次确认密码">
+                        </div>
+  					</div>
+                    <div class="form-group">
+    					<label for="inputUsername" class="col-sm-3 control-label hidden-xs">联系人姓名 <span class="symbol">*</span></label>
+    					<div class="col-sm-9">
+                        	<input type="text" class="form-control" id="inputUsername" placeholder="联系人姓名">
+                        </div>
+  					</div>
+                    <div class="form-group">
+    					<label id="labelInputPhone2" for="inputPhone2" class="col-sm-3 control-label hidden-xs">邮箱地址</label>
+    					<div class="col-sm-9">
+                        	<input type="text" class="form-control" id="inputPhone2" placeholder="邮箱地址(可选)">
+                        </div>
+  					</div>
+                    <div class="form-group">
+    					<div class="col-sm-offset-3 col-sm-9">
+      						<div class="checkbox">
+       	 						<label><input id="checkboxLeRule" type="checkbox">我已经阅读了《乐聊服务协议》</label>
+      						</div>
+    					</div>
+  					</div>
+ 					<div class="form-group">
+    					<div class="col-sm-offset-3 col-sm-9">
+      						<button type="button" id="register-2e-submit" class="btn btn-primary button-submit">下一步</button>
+    					</div>
+  					</div>
+				</form>
+            </div>
+            <div class="register" id="register-3">
+            	<div class="final-msg" id="final-msg">注册成功</div>
+                <div class="button-final" id="button-register-main">返回首页</div>
+                <div class="button-final" id="button-register-download">下载乐聊</div>
+                <div class="button-config" id="button-register-config">进入管理页面</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="complain-container" id="complain-container">
+    	<div class="wap">
+        	<div class="complain" id="complain-1">
+            	<form class="form-horizontal">
+                	<div class="form-group">
+                		<label for="complainEnterprise" class="col-sm-3 control-label hidden-xs">所属企业 <span class="symbol">*</span></label>
+                   		<div class="col-sm-9">
+                       		<select id="complainEnterprise" class="form-control">
+                            	<option value="">选择所属企业</option>
+ 					 			<option value="1">Lenovo</option>
+  								<option value="2">lenovo</option>
+                            	<option value="3">神奇工厂</option>
+							</select>
+                    	</div>
+                    </div>
+                    <div class="form-group">
+    					<label for="complainUsername" class="col-sm-3 control-label hidden-xs">申诉人姓名 <span class="symbol">*</span></label>
+    					<div class="col-sm-9">
+                        	<input type="text" class="form-control" id="complainUsername" placeholder="申诉人姓名">
+                        </div>
+  					</div>
+                    <div class="form-group">
+    					<label for="complainEmail" class="col-sm-3 control-label hidden-xs">联系邮箱 <span class="symbol">*</span></label>
+    					<div class="col-sm-9">
+                        	<input type="email" class="form-control" id="complainEmail" placeholder="申诉人联系邮箱">
+                        </div>
+  					</div>
+                    <div class="form-group">
+    					<label for="complainPhone" class="col-sm-3 control-label hidden-xs">手机号码 <span class="symbol">*</span></label>
+    					<div class="col-sm-9">
+                        	<input type="text" class="form-control" id="complainPhone" placeholder="申诉人手机号码">
+                        </div>
+  					</div>
+                    <div class="form-group">
+    					<label for="complainNote" class="col-sm-3 control-label hidden-xs">申诉内容 <span class="symbol">*</span></label>
+    					<div class="col-sm-9">
+                        	<textarea class="form-control" id="complainNote" placeholder="请填写申诉内容"></textarea>
+                        </div>
+  					</div>
+                    <div class="form-group">
+    					<div class="col-sm-offset-3 col-sm-9">
+      						<button type="button" id="complain-1-submit" class="btn btn-primary button-submit">提交</button>
+    					</div>
+  					</div>
+                 </form>
+            </div>
+            <div class="complain" id="complain-2">
+            	<div class="final-msg" id="final-msg">申诉成功</div>
+                <div class="button-final" id="button-complain-main">返回首页</div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <!-- countTo JS -->
+    <script type="text/javascript" src="js/jquery.countTo.js"></script>
+    <!-- waypoints JS -->
+    <script type="text/javascript" src="js/jquery.smooth-scroll.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="js/jquery.lazyload.min.js"></script>
+    <!-- Swiper JS -->
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <!-- Initialize -->
+    <script type='application/javascript' src='js/fastclick.js'></script>
+	<script>
+	
+		var h = $(window).height();
+		var w = $(window).width();
+		var cp = 1;
+		var cm = 0;
+		var swiperCubeEffect = "cube";
+		$("#loading-page").css('height',h+'px');
+		
+		$(window).resize(function() {
+			var w = $(window).width();
+  			var h = $(window).height();
+			init_css(h,w);
+		});
+		
+		$(document).ready(function () {
+			init_css(h,w);
+		});
+
+		$(window).load(function (){
+			
+			$("#loading-page").animate({opacity: 0}, "normal", function () {
+																		 
+            	$("#loading-page").css("display", "none");
+				FastClick.attach(document.body);
+				//init SwiperPhone
+				var swiperPhone = new Swiper('.phone-container .swiper-container', {
+					pagination: '.phone-container .swiper-pagination',
+					parallax: true,
+					speed: 300,
+					autoplay: 5000,
+					autoplayDisableOnInteraction: false,
+					paginationClickable: true,
+					mousewheelControl: true
+				});
+			
+				show_mainPage(swiperPhone);
+				show_tap();
+				show_phone();
+				init_timer();
+				init_smmothScroll();
+				init_niceScroll();
+				init_swipers();
+				init_button(swiperPhone);
+				
+            });
+
+		});
+		
+		function init_css(h,w){
+			
+			$('.top-background').css('height',h+'px');
+			$('.top-background .swiper-container').css('height',h+'px');
+			$('.main-container').css('height',h+'px');
+			$('#phone-head').css('height',h+'px');
+			$('#phone-back').css('height',h+'px');
+			$('#function-list-container').css('height',h+'px');
+			$('#register-container').css('height',h+'px');
+			
+			
+			if(w<767){
+				$('#register-container .wap-down').css('min-height',h-210+'px');
+				$('#complain-container .wap').css('min-height',h-100+'px');
+				$("#wap-inputCodeButton").removeClass("col-xs-3").addClass("col-xs-6");
+			}else{
+				$('#register-container .wap-down').css('min-height',h-350+'px');
+				$('#complain-container .wap').css('min-height',h-200+'px');
+				$("#wap-inputCodeButton").removeClass("col-xs-6").addClass("col-xs-3");
+			}
+		}
+		
+		function init_timer(){
+			$('.timer').each(count);
+		}
+		
+		function init_smmothScroll(){
+			$('.scrollToTop-container a').smoothScroll();
+		}
+		
+		function init_niceScroll(){
+			$("html").niceScroll({
+				cursorcolor:"#25b6ed",
+				smoothscroll: false});
+			
+		}
+		
+		function init_lazyload(){
+			$("img.lazy").lazyload({
+				placeholder : "img/pic_loading.gif",
+    			effect : "fadeIn"
+			});
+		}
+		
+		function init_swipers(){
+			//init Swiper
+			var swiper = new Swiper('.top-background .swiper-container', {
+				pagination: '.top-background .swiper-pagination',
+				effect: 'fade',
+				speed: 1000,
+				autoplay: 10000,
+				autoplayDisableOnInteraction: false,
+				loop: true
+			});
+			var swiper = new Swiper('.number-info-container .swiper-container', {
+				speed: 1000,
+				autoplay: 15000,
+				autoplayDisableOnInteraction: false,
+				noSwiping : true
+			});
+			
+			if(w<767) swiperCubeEffect="fade";
+			if("ActiveXObject" in window) swiperCubeEffect="slide";
+			var swiperCube = new Swiper('.function-container .swiper-container', {
+        		effect: swiperCubeEffect,
+				autoplayDisableOnInteraction: false,
+				noSwiping : true,
+				speed:600,
+        		cube: {
+            		shadow: true,
+            		slideShadows: true,
+            		shadowOffset: 40,
+            		shadowScale: 1.2
+        		},
+				pagination: '.function-container .swiper-pagination',
+				paginationClickable: true,
+				onInit: function(swiper){
+      				$('#function-bg-left').css('background-image','url(img/function_bg_left1.png)');
+					$('#function-bg-right').css('background-image','url(img/function_bg_right1.png)');
+    			},
+				paginationBulletRender: function (index, className) {
+					var text = "";
+					if(index==0) text="便捷沟通";
+					else if(index==1) text="办公协作";
+					else if(index==2) text="开放平台";
+            		return '<span class="' + className + '">' + text + '</span> ';
+        		},
+				onSlideChangeStart: function(swiperCube){
+      				$('#function-bg-left').css('background-image','url(img/function_bg_none.png)');
+					$('#function-bg-left').css('transform','translateX(-10px)');
+					$('#function-bg-right').css('background-image','url(img/function_bg_none.png)');
+					$('#function-bg-right').css('transform','translateX(10px)');
+    			},
+				onSlideChangeEnd: function(swiperCube){
+      				if(swiperCube.activeIndex==0){
+						$('#function-bg-left').css('background-image','url(img/function_bg_left1.png)');
+						$('#function-bg-right').css('background-image','url(img/function_bg_right1.png)');
+					}else if(swiperCube.activeIndex==1){
+						$('#function-bg-left').css('background-image','url(img/function_bg_left2.png)');
+						$('#function-bg-right').css('background-image','url(img/function_bg_right2.png)');
+					}else if(swiperCube.activeIndex==2){
+						$('#function-bg-left').css('background-image','url(img/function_bg_left3.png)');
+						$('#function-bg-right').css('background-image','url(img/function_bg_right3.png)');
+					}
+					$('#function-bg-left').css('transform','translateX(0px)');
+					$('#function-bg-right').css('transform','translateX(0px)');
+    			}
+    		});
+			var swiper = new Swiper('.setup-container .swiper-container', {
+				autoplayDisableOnInteraction: false,
+				//autoplay : 5000,
+				speed:600,
+				pagination: '.setup-container .swiper-pagination',
+				paginationClickable: true,
+				paginationBulletRender: function (index, className) {
+					var text = "";
+					if(index==0) text="SaaS模式";
+					else if(index==1) text="本地部署";
+            		return '<span class="' + className + '">' + text + '</span> ';
+        		}
+    		});	
+		}
+		
+		//init button
+		function init_button(swiperPhone){
+			
+			$("#tab-main").click(function(){
+					if(cp==2){
+						hide_functionPage();
+						show_mainPage(swiperPhone);
+					}else if(cp==3){
+						hide_downloadPage();
+						show_phone();
+						show_mainPage(swiperPhone);
+					}else if(cp==4){
+						hide_registerPage();
+						show_phone();
+						show_mainPage(swiperPhone);
+					}else if(cp==5){
+						hide_complainPage();
+						show_phone();
+						show_mainPage(swiperPhone);
+					}
+					cp = 1;
+			});
+			
+			$("#tab-function").click(function(){
+					if(cp==1){
+						hide_mainPage();
+						show_functionPage(swiperPhone);	
+					}else if(cp==3){
+						hide_downloadPage();
+						show_phone();
+						show_functionPage(swiperPhone);
+					}else if(cp==4){
+						hide_registerPage();
+						show_phone();
+						show_functionPage(swiperPhone);
+					}else if(cp==5){
+						hide_complainPage();
+						show_phone();
+						show_functionPage(swiperPhone);
+					}
+					cp = 2;
+			});	
+			
+			$("#tab-download").click(function(){
+					if(cp==1){
+						hide_mainPage();
+						hide_phone();
+						show_downloadPage();	
+					}else if(cp==2){
+						hide_functionPage();
+						hide_phone();
+						show_downloadPage();
+					}else if(cp==4){
+						hide_registerPage();
+						show_downloadPage();
+					}else if(cp==5){
+						hide_complainPage();
+						show_downloadPage();
+					}
+					cp = 3;
+			});	
+			
+			$("#ssign-button").click(function(){
+				hide_mainPage();
+				hide_phone();
+				show_registerPage();
+				cp = 4;
+				cm = 1;
+			});
+			
+			$("#epsign-button").click(function(){
+				hide_mainPage();
+				hide_phone();
+				show_registerPage();
+				cp = 4;
+				cm = 2;
+			});
+			
+			$("#complain-button").click(function(){
+				hide_mainPage();
+				hide_phone();
+				show_complainPage();
+				cp = 5;
+			});
+			
+			$('#selectMobile-email').change(function(){ 
+				var p1=$(this).children('option:selected').val();
+				if(p1=="mobile"){
+					$("#register-1-zone").html("+86");
+					$("#inputPhone").attr('type','text').attr('placeholder','请输入手机号');
+					$("#labelInputCode").html("短信验证码 *");
+					$("#inputCode").attr('placeholder','短信验证码');
+					
+					$("#labelInputPhone2").html("邮箱地址");
+					$("#inputPhone2").attr('placeholder','邮箱地址(可选)');
+				}else{
+					$("#register-1-zone").html("");
+					$("#inputPhone").attr('type','email').attr('placeholder','请输入邮箱地址');
+					$("#labelInputCode").html("邮箱验证码 *");
+					$("#inputCode").attr('placeholder','邮箱验证码');
+					
+					$("#labelInputPhone2").html("手机号码");
+					$("#inputPhone2").attr('placeholder','手机号码(可选)');
+				}
+			});
+			
+			$("#register-1-submit").click(function(){
+				if(cm == 1){
+					$("#register-1").css("display","none");
+					$("#register-2").css("display","block");
+				}else if(cm == 2){
+					$("#register-1").css("display","none");
+					$("#register-2e").css("display","block");
+				}
+				$("#register-number-2").css('border','2px #25b6ed solid').css('color','#fff').css('background-color','#25b6ed');
+				$("#register-title-2").css('color','#25b6ed');
+			});
+			
+			$("#button-pe-create").click(function(){
+				$("#register-2").css("display","none");
+				$("#register-2e").css("display","block");
+			});
+			
+			$("#register-2-submit").click(function(){
+				$("#register-2").css("display","none");
+				$("#register-3").css("display","block");
+				$("#register-number-3").css('border','2px #25b6ed solid').css('color','#fff').css('background-color','#25b6ed');
+				$("#register-title-3").css('color','#25b6ed');
+			});
+			
+			$("#register-2e-submit").click(function(){
+				$("#register-2e").css("display","none");
+				$("#register-3").css("display","block");
+				$("#register-number-3").css('border','2px #25b6ed solid').css('color','#fff').css('background-color','#25b6ed');
+				$("#register-title-3").css('color','#25b6ed');
+			});
+			
+			$("#button-register-main").click(function(){
+				hide_registerPage();
+				show_phone();
+				show_mainPage(swiperPhone);
+				cp = 1;
+				cm = 0;
+			});
+			
+			$("#button-register-download").click(function(){
+				hide_registerPage();
+				show_downloadPage();
+				cp = 3;
+				cm = 0;
+			});
+			
+			$("#complain-1-submit").click(function(){
+				$("#complain-1").css("display","none");
+				$("#complain-2").css("display","block");
+			});
+			
+			$("#button-complain-main").click(function(){
+				hide_complainPage();
+				show_phone();
+				show_mainPage(swiperPhone);
+				cp = 1;
+			});
+			
+		}
+		
+		//timers
+		function count(options) {
+        	var $this = $(this);
+        	options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+        	$this.countTo(options);
+		}
+		
+		function show_tap(){
+			$('#head-container').css('display','block');
+			$("#head-container").removeClass("fadeIn animated").addClass("fadeIn animated").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend animationend', 
+			function(){
+      			$(this).removeClass("fadeIn animated");
+				$(this).css("display","block");
+			});
+		}
+		
+		function show_phone(){
+
+			$('#phone-container').css('display','block');
+			$("#phone-container").removeClass("fadeInRight fadeOutRight animated").addClass("fadeInRight animated").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend animationend', 
+			function(){
+      			$(this).removeClass("fadeInRight animated");
+				$(this).css("display","block");
+			});
+			
+			$('#phone-back-container').css('display','block').css('-webkit-animation-delay','0.5s').css('animation-delay','0.5s');
+			$("#phone-back-container").removeClass("fadeInLeft fadeOutRight animated").addClass("fadeInLeft animated").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend animationend', 
+			function(){
+      			$(this).removeClass("fadeInLeft animated");
+				$(this).css("display","block");
+			});	
+		}
+		
+		function hide_phone(){
+			
+			$("#phone-container").removeClass("fadeInRight fadeOutRight animated").addClass("fadeOutRight animated").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend animationend', 
+			function(){
+      			$(this).removeClass("fadeOutRight animated");
+				$(this).css('display','none');
+			});
+			
+			$("#phone-back-container").removeClass("fadeInLeft fadeOutRight animated").addClass("fadeOutRight animated").css('-webkit-animation-delay','0s').css('animation-delay','0s').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend animationend', 
+			function(){
+      			$(this).removeClass("fadeOutRight animated");
+				$(this).css('display','none');
+			});	
+		}
+		
+		function show_mainPage(swiperPhone){
+			
+			$("#main-title").css("display","inline");
+			$("#epsign").css("display","block");
+			$("#ssign").css("display","block");
+			$("#download").css("display","block");
+			$("#main-container").css("display","block");
+			$("#logo-container").css("display","block");
+			$("#number-info-container").css("display","block");
+			$("#function-container").css("display","block");
+			$("#security-container").css("display","block");
+			$("#setup-container").css("display","block");
+			$("#footer").css("display","block");
+			$("#scrollToTop-container").css("display","block");
+			new WOW().init();
+			
+			$("#main-title").removeClass("fadeInLeft fadeOutLeft animated").addClass("fadeInLeft animated").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend animationend', 
+			function(){
+      			$(this).removeClass("fadeInLeft animated");
+				$(this).css("display","inline");
+			});
+			
+			$("#epsign").removeClass("fadeInLeft fadeOutLeft animated").addClass("fadeInLeft animated").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend animationend', 
+			function(){
+      			$(this).removeClass("fadeInLeft animated");
+				$(this).css("display","block");
+			});
+			
+			$("#ssign").removeClass("fadeInLeft fadeOutLeft animated").addClass("fadeInLeft animated").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend animationend', 
+			function(){
+      			$(this).removeClass("fadeInLeft animated");
+				$(this).css("display","block");
+			});
+			
+			$("#download").removeClass("fadeInLeft fadeOutLeft animated").addClass("fadeInLeft animated").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend animationend', 
+			function(){
+      			$(this).removeClass("fadeInLeft animated");
+				$(this).css("display","block");
+			});
+			
+			swiperPhone.removeAllSlides();
+			swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/p1.jpg" /></div>');
+			init_lazyload();
+
+		}
+		
+		function hide_mainPage(){
+			
+			$("#logo-container").css("display","none");
+			$("#number-info-container").css("display","none");
+			$("#function-container").css("display","none");
+			$("#security-container").css("display","none");
+			$("#setup-container").css("display","none");
+			$("#footer").css("display","none");
+			$("#scrollToTop-container").css("display","none");
+			
+			$("#main-title").removeClass("fadeInLeft fadeOutLeft animated").addClass("fadeOutLeft animated").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend animationend', 
+			function(){
+      			$(this).removeClass("fadeOutLeft animated");
+				$(this).css("display","none");
+			});
+			
+			$("#epsign").removeClass("fadeInLeft fadeOutLeft animated").addClass("fadeOutLeft animated").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend animationend', 
+			function(){
+      			$(this).removeClass("fadeOutLeft animated");
+				$(this).css("display","none");
+			});
+			
+			$("#ssign").removeClass("fadeInLeft fadeOutLeft animated").addClass("fadeOutLeft animated").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend animationend', 
+			function(){
+      			$(this).removeClass("fadeOutLeft animated");
+				$(this).css("display","none");
+			});
+			
+			$("#download").removeClass("fadeInLeft fadeOutLeft animated").addClass("fadeOutLeft animated").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend animationend', 
+			function(){
+      			$(this).removeClass("fadeOutLeft animated");
+				$(this).css("display","none");
+			});
+			
+		}
+		
+		var isShowedFunctionPage = 0;
+		var currentFunctionPage = 0;
+		function show_functionPage(swiperPhone){
+			
+			$("#top-background").css('position','fixed');
+			$("#function-list-container").css("display","block");
+			$("#function-list-container").removeClass("fadeIn fadeOut animated").addClass("fadeIn animated").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend animationend', 
+			function(){
+      			$(this).removeClass("fadeIn animated");
+				$(this).css("display","block");
+			});
+			
+			if(isShowedFunctionPage == 0){
+				var swiperFunction = new Swiper('.function-list-container .swiper-container', {
+					direction: 'vertical',
+					speed:600,
+					pagination: '.function-list-container .swiper-pagination',
+					paginationClickable: true,
+					mousewheelControl: true,
+					onSlideChangeEnd: function(swiperFunction){
+						swiperPhone.removeAllSlides();
+						currentFunctionPage = swiperFunction.activeIndex;
+      					if(swiperFunction.activeIndex==0){
+							swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/1-1.jpg" /></div>');
+							swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/1-2.jpg" /></div>');
+						}else if(swiperFunction.activeIndex==1){
+							swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/2-1.jpg" /></div>');
+							swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/2-2.jpg" /></div>');
+						}else if(swiperFunction.activeIndex==2){
+							swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/3-1.jpg" /></div>');
+							swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/3-2.jpg" /></div>');
+							swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/3-3.jpg" /></div>');
+						}else if(swiperFunction.activeIndex==3){
+							swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/4-1.jpg" /></div>');
+							swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/4-2.jpg" /></div>');
+						}else if(swiperFunction.activeIndex==4){
+							swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/5-1.jpg" /></div>');
+							swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/5-2.jpg" /></div>');
+						}else if(swiperFunction.activeIndex==5){
+							swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/6-1.jpg" /></div>');
+						}else if(swiperFunction.activeIndex==6){
+							swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/7-1.jpg" /></div>');
+							swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/7-2.jpg" /></div>');
+						}else if(swiperFunction.activeIndex==7){
+							swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/8-1.jpg" /></div>');
+							swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/8-2.jpg" /></div>');
+						}else if(swiperFunction.activeIndex==8){
+							swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/9-1.jpg" /></div>');
+							swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/9-2.jpg" /></div>');
+							swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/9-3.jpg" /></div>');
+						}else if(swiperFunction.activeIndex==9){
+							swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/10-1.jpg" /></div>');
+						}
+						init_lazyload();
+    				}
+    			});
+				isShowedFunctionPage = 1;
+				
+				$("#down-arrows").click(function(){
+					swiperFunction.slideNext();
+				});
+			}
+			
+			swiperPhone.removeAllSlides();
+			if(currentFunctionPage==0){
+				swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/1-1.jpg" /></div>');
+				swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/1-2.jpg" /></div>');
+			}else if(currentFunctionPage==1){
+				swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/2-1.jpg" /></div>');
+				swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/2-2.jpg" /></div>');
+			}else if(currentFunctionPage==2){
+				swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/3-1.jpg" /></div>');
+				swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/3-2.jpg" /></div>');
+				swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/3-3.jpg" /></div>');
+			}else if(currentFunctionPage==3){
+				swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/4-1.jpg" /></div>');
+				swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/4-2.jpg" /></div>');
+			}else if(currentFunctionPage==4){
+				swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/5-1.jpg" /></div>');
+				swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/5-2.jpg" /></div>');
+			}else if(currentFunctionPage==5){
+				swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/6-1.jpg" /></div>');
+			}else if(currentFunctionPage==6){
+				swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/7-1.jpg" /></div>');
+				swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/7-2.jpg" /></div>');
+			}else if(currentFunctionPage==7){
+				swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/8-1.jpg" /></div>');
+				swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/8-2.jpg" /></div>');
+			}else if(currentFunctionPage==8){
+				swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/9-1.jpg" /></div>');
+				swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/9-2.jpg" /></div>');
+				swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/9-3.jpg" /></div>');
+			}else if(currentFunctionPage==9){
+				swiperPhone.appendSlide('<div class="swiper-slide"><img class="lazy" data-original="img/function/10-1.jpg" /></div>');
+			}
+			init_lazyload();
+		}
+		
+		function hide_functionPage(){
+			
+			$("#top-background").css('position','absolute');
+			$("#function-list-container").removeClass("fadeIn fadeOut animated").addClass("fadeOut animated").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend animationend', 
+			function(){
+      			$(this).removeClass("fadeOut animated");
+				$(this).css("display","none");
+			});
+		}
+		
+		function show_downloadPage(){
+			
+			$("#top-background").css('position','fixed');
+			$('#download-container').css('display','block');
+			$("#download-container").removeClass("fadeInDown fadeOut animated").addClass("fadeInDown animated").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend animationend', 
+			function(){
+      			$(this).removeClass("fadeInDown animated");
+				$(this).css("display","block");
+			});
+		}
+		
+		function hide_downloadPage(){
+			
+			$("#top-background").css('position','absolute');
+			$("#download-container").removeClass("fadeInDown fadeOut animated").addClass("fadeOut animated").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend animationend', 
+			function(){
+      			$(this).removeClass("fadeOut animated");
+				$(this).css('display','none');
+			});
+		}
+		
+		function show_registerPage(){
+			
+			$("#top-background").css('position','fixed');
+			$('#register-container').css('display','block');
+			$("#register-container").removeClass("fadeIn fadeOut animated").addClass("fadeIn animated").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend animationend', 
+			function(){
+      			$(this).removeClass("fadeIn animated");
+				$(this).css("display","block");
+			});
+			
+			$("#register-number-1").css('border','2px #25b6ed solid').css('color','#fff').css('background-color','#25b6ed');
+			$("#register-title-1").css('color','#25b6ed');
+			
+			$("#register-1").css('display','block');
+			
+		}
+		
+		function hide_registerPage(){
+			
+			$("#top-background").css('position','absolute');
+			$("#register-container").removeClass("fadeIn fadeOut animated").addClass("fadeOut animated").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend animationend', 
+			function(){
+      			$(this).removeClass("fadeOut animated");
+				$(this).css('display','none');
+			});
+			
+			$("#register-number-1").css('border','2px #a0a0a0 solid').css('color','#a0a0a0').css('background-color','transparent');
+			$("#register-title-1").css('color','#a0a0a0');
+			$("#register-number-2").css('border','2px #a0a0a0 solid').css('color','#a0a0a0').css('background-color','transparent');
+			$("#register-title-2").css('color','#a0a0a0');
+			$("#register-number-3").css('border','2px #a0a0a0 solid').css('color','#a0a0a0').css('background-color','transparent');
+			$("#register-title-3").css('color','#a0a0a0');
+			
+			$("#inputPhone").val('');
+			$("#inputCode").val('');
+			$("#checkboxRule").val('');
+			$("#inputPassword").val('');
+			$("#inputRePassword").val('');
+			$("#inputEnterprise").val('');
+			$("#inputEnterpriseName").val('');
+			$("#inputEnterpriseLocation").val('');
+			$("#inputPasswordEp").val('');
+			$("#inputRePasswordEp").val('');
+			$("#inputUsername").val('');
+			$("#inputPhone2").val('');
+			
+			$("#register-1").css('display','none');
+			$("#register-2").css('display','none');
+			$("#register-2e").css('display','none');
+			$("#register-3").css('display','none');
+		}
+		
+		function show_complainPage(){
+			
+			$("#top-background").css('position','fixed');
+			$('#complain-container').css('display','block');
+			$("#complain-container").removeClass("fadeIn fadeOut animated").addClass("fadeIn animated").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend animationend', 
+			function(){
+      			$(this).removeClass("fadeIn animated");
+				$(this).css("display","block");
+			});
+			
+			$("#complain-1").css('display','block');
+			
+		}
+		
+		function hide_complainPage(){
+			
+			$("#top-background").css('position','absolute');
+			$("#complain-container").removeClass("fadeIn fadeOut animated").addClass("fadeOut animated").one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend animationend', 
+			function(){
+      			$(this).removeClass("fadeOut animated");
+				$(this).css('display','none');
+			});
+			
+			$("#complainUsername").val('');
+			$("#complainEmail").val('');
+			$("#complainPhone").val('');
+			$("#complainNote").val('');
+			
+			$("#complain-1").css('display','none');
+			$("#complain-2").css('display','none');
+
+		}
+
+    </script>
+</body>
+</html>
